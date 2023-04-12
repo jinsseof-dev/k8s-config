@@ -22,13 +22,13 @@ spec:
       - name: eks-example
         image: "159955208939.dkr.ecr.us-east-2.amazonaws.com/eks-example"
         imagePullPolicy: IfNotPresent
-                resources:
-          requests:
-            memory: "64Mi"
-            cpu: "200m"
-          limits:
-            memory: "64Mi"
-            cpu: "400m"
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "200m"
+            limits:
+              memory: "64Mi"
+              cpu: "400m"
         ports:
         - containerPort: 80
           name: http
