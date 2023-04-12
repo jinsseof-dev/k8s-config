@@ -5,12 +5,12 @@ metadata:
   namespace: eks-example
   labels:
     app: eks-example
-    spec:
-      type: LoadBalancer
-      ports:
-        - port: 80
-          targetPort: http
-          protocol: TCP
-          name: http
-          selector:
-            app: eks-example
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: eks-example
