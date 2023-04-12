@@ -1,0 +1,11 @@
+- apiVersion: v1
+  kind: ResourceQuota
+  metadata:
+    name: ns-quota
+    namespace: eks-example
+    spec:
+      hard:
+        request:
+          memory: 1Gi
+        limit:
+          memory: 1Gi
