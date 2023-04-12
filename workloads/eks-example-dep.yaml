@@ -21,6 +21,7 @@ spec:
       containers:
       - name: eks-example
         image: "159955208939.dkr.ecr.us-east-2.amazonaws.com/eks-example"
+        imagePullPolicy: IfNotPresent
         resources:
           requests:
             memory: "64Mi"
