@@ -5,7 +5,6 @@
     namespace: eks-example
     spec:
       hard:
-        request:
-          memory: 1Gi
-        limit:
-          memory: 1Gi
+        requests:
+          requests.memory: 1Gi
+          limits.memory: 1Gi
